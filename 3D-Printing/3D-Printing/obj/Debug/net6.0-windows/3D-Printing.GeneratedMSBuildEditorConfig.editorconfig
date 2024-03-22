@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = _3D_Printing
-build_property.ProjectDir = D:\Github\PRN221_3D-Printing\3D-Printing\3D-Printing\
+build_property.ProjectDir = D:\Semester 7 - DotNet\PRN221\Project\Asm1\PRN221_3D-Printing\3D-Printing\3D-Printing\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

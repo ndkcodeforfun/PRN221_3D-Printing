@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\PRN221_3D-Printing\\3D-Printing\\3D-Printing\\3D-Printing.csproj": {}
+    "D:\\Semester 7 - DotNet\\PRN221\\Project\\Asm1\\PRN221_3D-Printing\\3D-Printing\\3D-Printing\\3D-Printing.csproj": {}
   },
   "projects": {
-    "D:\\Github\\PRN221_3D-Printing\\3D-Printing\\3D-Printing\\3D-Printing.csproj": {
+    "D:\\Semester 7 - DotNet\\PRN221\\Project\\Asm1\\PRN221_3D-Printing\\3D-Printing\\3D-Printing\\3D-Printing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\PRN221_3D-Printing\\3D-Printing\\3D-Printing\\3D-Printing.csproj",
+        "projectUniqueName": "D:\\Semester 7 - DotNet\\PRN221\\Project\\Asm1\\PRN221_3D-Printing\\3D-Printing\\3D-Printing\\3D-Printing.csproj",
         "projectName": "3D-Printing",
-        "projectPath": "D:\\Github\\PRN221_3D-Printing\\3D-Printing\\3D-Printing\\3D-Printing.csproj",
-        "packagesPath": "C:\\Users\\Khanh\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\PRN221_3D-Printing\\3D-Printing\\3D-Printing\\obj\\",
+        "projectPath": "D:\\Semester 7 - DotNet\\PRN221\\Project\\Asm1\\PRN221_3D-Printing\\3D-Printing\\3D-Printing\\3D-Printing.csproj",
+        "packagesPath": "C:\\Users\\Louis\\.nuget\\packages\\",
+        "outputPath": "D:\\Semester 7 - DotNet\\PRN221\\Project\\Asm1\\PRN221_3D-Printing\\3D-Printing\\3D-Printing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Khanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Louis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,6 +44,20 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "AssimpNet": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "HelixToolkit.Wpf": {
+              "target": "Package",
+              "version": "[2.25.0, )"
+            },
+            "HelixToolkit.Wpf.SharpDX": {
+              "target": "Package",
+              "version": "[2.25.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -54,6 +69,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -62,7 +95,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
