@@ -17,6 +17,9 @@ using Assimp;
 using HelixToolkit.Wpf;
 using Microsoft.Win32;
 using Assimp.Configs;
+using System.Drawing.Printing;
+using System.Printing;
+using System.Diagnostics;
 
 namespace _3D_Printing
 {
@@ -27,6 +30,8 @@ namespace _3D_Printing
     {
         private ModelImporter importer;
         private ModelVisual3D currentModelVisual;
+        private System.Timers.Timer printerScanTimer;
+        private string selectedPrinter = null;
 
         public MainWindow()
         {
@@ -38,6 +43,8 @@ namespace _3D_Printing
             helixViewport.MouseWheel += HelixViewport_MouseWheel;
 
             importer = new ModelImporter();
+
+            StartPrinterScanTimer();
         }
 
         private void btnImport_Click(object sender, RoutedEventArgs e)
@@ -157,6 +164,84 @@ namespace _3D_Printing
                 helixViewport.Camera.Position.Y,
                 helixViewport.Camera.Position.Z + e.Delta * 0.001
             );
+        }
+
+
+        private void StartPrinterScanTimer()
+        {
+            // Create a timer with 10 seconds interval
+            printerScanTimer = new System.Timers.Timer(3000);
+            printerScanTimer.Elapsed += PrinterScanTimer_Elapsed;
+            printerScanTimer.AutoReset = true;
+            printerScanTimer.Start();
+        }
+
+        private void PrinterScanTimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            // Update the list of printers
+            Dispatcher.Invoke(() =>
+            {
+                PopulatePrinterComboBox();
+            });
+        }
+
+        private void PopulatePrinterComboBox()
+        {
+            // Get the currently selected printer, if any
+            string previouslySelectedPrinter = selectedPrinter;
+
+            // Clear existing printers
+            string currentSelection = cbPrinters.SelectedItem as string;
+            cbPrinters.Items.Clear();
+
+            // Enumerate all printers and add them to the ComboBox
+            LocalPrintServer printServer = new LocalPrintServer();
+            foreach (PrintQueue printQueue in printServer.GetPrintQueues())
+            {
+                cbPrinters.Items.Add(printQueue.Name);
+            }
+
+            // Restore previous selection if it still exists in the list
+            if (!string.IsNullOrEmpty(previouslySelectedPrinter) && cbPrinters.Items.Contains(previouslySelectedPrinter))
+            {
+                selectedPrinter = previouslySelectedPrinter;
+            }
+
+            // Set the ComboBox selection
+            if (cbPrinters.Items.Contains(currentSelection))
+            {
+                cbPrinters.SelectedItem = currentSelection;
+            }
+            else if (cbPrinters.Items.Count > 0)
+            {
+                cbPrinters.SelectedIndex = 0; // Select the first item if the previous selection is not available
+                selectedPrinter = cbPrinters.SelectedItem as string;
+            }
+        }
+
+        private void cbPrinters_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            // Update the selected printer
+            selectedPrinter = cbPrinters.SelectedItem as string;
+        }
+
+        private void btnPrint_Click(object sender, RoutedEventArgs e)
+        {
+            if (currentModelVisual != null && !string.IsNullOrEmpty(selectedPrinter))
+            {
+                try
+                {
+                    MessageBox.Show("printing: " + currentModelVisual.ToString());
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error printing: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please import a 3D model and select a printer before printing.");
+            }
         }
     }
 }

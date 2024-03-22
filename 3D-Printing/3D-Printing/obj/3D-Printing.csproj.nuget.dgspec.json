@@ -52,10 +52,6 @@
             "HelixToolkit.Wpf": {
               "target": "Package",
               "version": "[2.25.0, )"
-            },
-            "HelixToolkit.Wpf.SharpDX": {
-              "target": "Package",
-              "version": "[2.25.0, )"
             }
           },
           "imports": [

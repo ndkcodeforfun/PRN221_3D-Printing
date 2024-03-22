@@ -1,15 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "O/y39gdBgC0aMEvypvWX4YMYYwwb5H6ttv73GbeyS6dJ87GcX4Hwgc7ougcHzeToM2UzB3m5iSbtglu2g+Mskw==",
+  "dgSpecHash": "mh8mueff69mV8Hm1IOGCmHlovmPB4uN25P+SUhjBqCPAKz4ehJ+L6aWDikyM6nokCuJBxujYs1shCcQQVj++jQ==",
   "success": true,
   "projectFilePath": "D:\\Semester 7 - DotNet\\PRN221\\Project\\Asm1\\PRN221_3D-Printing\\3D-Printing\\3D-Printing\\3D-Printing.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Louis\\.nuget\\packages\\assimpnet\\4.1.0\\assimpnet.4.1.0.nupkg.sha512",
-    "C:\\Users\\Louis\\.nuget\\packages\\cyotek.drawing.bitmapfont\\2.0.0\\cyotek.drawing.bitmapfont.2.0.0.nupkg.sha512",
-    "C:\\Users\\Louis\\.nuget\\packages\\helixtoolkit\\2.25.0\\helixtoolkit.2.25.0.nupkg.sha512",
     "C:\\Users\\Louis\\.nuget\\packages\\helixtoolkit.wpf\\2.25.0\\helixtoolkit.wpf.2.25.0.nupkg.sha512",
-    "C:\\Users\\Louis\\.nuget\\packages\\helixtoolkit.wpf.sharpdx\\2.25.0\\helixtoolkit.wpf.sharpdx.2.25.0.nupkg.sha512",
-    "C:\\Users\\Louis\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Louis\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Louis\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Louis\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
@@ -30,13 +26,6 @@
     "C:\\Users\\Louis\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Louis\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Louis\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
-    "C:\\Users\\Louis\\.nuget\\packages\\sharpdx\\4.2.0\\sharpdx.4.2.0.nupkg.sha512",
-    "C:\\Users\\Louis\\.nuget\\packages\\sharpdx.d3dcompiler\\4.2.0\\sharpdx.d3dcompiler.4.2.0.nupkg.sha512",
-    "C:\\Users\\Louis\\.nuget\\packages\\sharpdx.direct2d1\\4.2.0\\sharpdx.direct2d1.4.2.0.nupkg.sha512",
-    "C:\\Users\\Louis\\.nuget\\packages\\sharpdx.direct3d11\\4.2.0\\sharpdx.direct3d11.4.2.0.nupkg.sha512",
-    "C:\\Users\\Louis\\.nuget\\packages\\sharpdx.direct3d9\\4.2.0\\sharpdx.direct3d9.4.2.0.nupkg.sha512",
-    "C:\\Users\\Louis\\.nuget\\packages\\sharpdx.dxgi\\4.2.0\\sharpdx.dxgi.4.2.0.nupkg.sha512",
-    "C:\\Users\\Louis\\.nuget\\packages\\sharpdx.mathematics\\4.2.0\\sharpdx.mathematics.4.2.0.nupkg.sha512",
     "C:\\Users\\Louis\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\Louis\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\Louis\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
@@ -102,16 +91,6 @@
       "warningLevel": 1,
       "message": "Package 'HelixToolkit.Wpf 2.25.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "HelixToolkit.Wpf",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'HelixToolkit.Wpf.SharpDX 2.25.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "HelixToolkit.Wpf.SharpDX",
       "targetGraphs": [
         "net6.0-windows7.0"
       ]

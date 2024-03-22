@@ -39,58 +39,11 @@
           }
         }
       },
-      "Cyotek.Drawing.BitmapFont/2.0.0": {
-        "runtime": {
-          "lib/netcoreapp3.1/Cyotek.Drawing.BitmapFont.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "2.0.0.0"
-          }
-        }
-      },
-      "HelixToolkit/2.25.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/HelixToolkit.dll": {
-            "assemblyVersion": "2.25.0.0",
-            "fileVersion": "2.25.0.0"
-          }
-        }
-      },
       "HelixToolkit.Wpf/2.25.0": {
         "runtime": {
           "lib/net462/HelixToolkit.Wpf.dll": {
             "assemblyVersion": "2.25.0.0",
             "fileVersion": "2.25.0.0"
-          }
-        }
-      },
-      "HelixToolkit.Wpf.SharpDX/2.25.0": {
-        "dependencies": {
-          "Cyotek.Drawing.BitmapFont": "2.0.0",
-          "HelixToolkit": "2.25.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
-          "SharpDX": "4.2.0",
-          "SharpDX.D3DCompiler": "4.2.0",
-          "SharpDX.DXGI": "4.2.0",
-          "SharpDX.Direct2D1": "4.2.0",
-          "SharpDX.Direct3D11": "4.2.0",
-          "SharpDX.Direct3D9": "4.2.0",
-          "SharpDX.Mathematics": "4.2.0"
-        },
-        "runtime": {
-          "lib/net462/HelixToolkit.Wpf.SharpDX.dll": {
-            "assemblyVersion": "2.25.0.0",
-            "fileVersion": "2.25.0.0"
-          }
-        }
-      },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
-        "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.52210"
           }
         }
       },
@@ -284,91 +237,6 @@
             "rid": "ubuntu.16.10-x64",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
-          }
-        }
-      },
-      "SharpDX/4.2.0": {
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        },
-        "runtime": {
-          "lib/netstandard1.1/SharpDX.dll": {
-            "assemblyVersion": "4.2.0.0",
-            "fileVersion": "4.2.0.0"
-          }
-        }
-      },
-      "SharpDX.D3DCompiler/4.2.0": {
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "SharpDX": "4.2.0"
-        },
-        "runtime": {
-          "lib/netstandard1.1/SharpDX.D3DCompiler.dll": {
-            "assemblyVersion": "4.2.0.0",
-            "fileVersion": "4.2.0.0"
-          }
-        }
-      },
-      "SharpDX.Direct2D1/4.2.0": {
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "SharpDX": "4.2.0",
-          "SharpDX.DXGI": "4.2.0"
-        },
-        "runtime": {
-          "lib/netstandard1.1/SharpDX.Direct2D1.dll": {
-            "assemblyVersion": "4.2.0.0",
-            "fileVersion": "4.2.0.0"
-          }
-        }
-      },
-      "SharpDX.Direct3D11/4.2.0": {
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "SharpDX": "4.2.0",
-          "SharpDX.DXGI": "4.2.0"
-        },
-        "runtime": {
-          "lib/netstandard1.1/SharpDX.Direct3D11.dll": {
-            "assemblyVersion": "4.2.0.0",
-            "fileVersion": "4.2.0.0"
-          }
-        }
-      },
-      "SharpDX.Direct3D9/4.2.0": {
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "SharpDX": "4.2.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/SharpDX.Direct3D9.dll": {
-            "assemblyVersion": "4.2.0.0",
-            "fileVersion": "4.2.0.0"
-          }
-        }
-      },
-      "SharpDX.DXGI/4.2.0": {
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "SharpDX": "4.2.0"
-        },
-        "runtime": {
-          "lib/netstandard1.1/SharpDX.DXGI.dll": {
-            "assemblyVersion": "4.2.0.0",
-            "fileVersion": "4.2.0.0"
-          }
-        }
-      },
-      "SharpDX.Mathematics/4.2.0": {
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "SharpDX": "4.2.0"
-        },
-        "runtime": {
-          "lib/netstandard1.1/SharpDX.Mathematics.dll": {
-            "assemblyVersion": "4.2.0.0",
-            "fileVersion": "4.2.0.0"
           }
         }
       },
@@ -1215,40 +1083,12 @@
       "path": "assimpnet/4.1.0",
       "hashPath": "assimpnet.4.1.0.nupkg.sha512"
     },
-    "Cyotek.Drawing.BitmapFont/2.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-t6vYF0sXgNb6dP9QNbJxJWw3RdCEWC6Llv47oPYpobYAhmKcgmAZJv6HXK03DEUmo7ff6yPvsyEWTkia+UAONw==",
-      "path": "cyotek.drawing.bitmapfont/2.0.0",
-      "hashPath": "cyotek.drawing.bitmapfont.2.0.0.nupkg.sha512"
-    },
-    "HelixToolkit/2.25.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-UzF6KXadTdzrjTA8G00+V7RaQNpH+0729xByD6zhCgvDLvZ63CvH84/x2sjUO52bzHFphYixXtzf8G/OGVtz3w==",
-      "path": "helixtoolkit/2.25.0",
-      "hashPath": "helixtoolkit.2.25.0.nupkg.sha512"
-    },
     "HelixToolkit.Wpf/2.25.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-eoMdrDgeSFo1JH15f2X/E5/nZUMAqvWzR8qcVzjLarCxR5qNleRqF+UHSzyCkvygeeDLCC/uharpD/gysFYuHw==",
       "path": "helixtoolkit.wpf/2.25.0",
       "hashPath": "helixtoolkit.wpf.2.25.0.nupkg.sha512"
-    },
-    "HelixToolkit.Wpf.SharpDX/2.25.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-hlzFdhV3DstHcFq2661tFdsX6XLu27A82zHSRb3Q7UOBTX80YhWDqiYtRsoQ00QAiN+W/xVh1HBY49xumLtDWg==",
-      "path": "helixtoolkit.wpf.sharpdx/2.25.0",
-      "hashPath": "helixtoolkit.wpf.sharpdx.2.25.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-/HggWBbTwy8TgebGSX5DBZ24ndhzi93sHUBDvP1IxbZD7FDokYzdAr6+vbWGjw2XAfR2EJ1sfKUotpjHnFWPxA==",
-      "path": "microsoft.extensions.logging.abstractions/6.0.0",
-      "hashPath": "microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -1389,55 +1229,6 @@
       "sha512": "sha512-VB5cn/7OzUfzdnC8tqAIMQciVLiq2epm2NrAm1E9OjNRyG4lVhfR61SMcLizejzQP8R8Uf/0l5qOIbUEi+RdEg==",
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
-    },
-    "SharpDX/4.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3pv0LFMvfK/dv1qISJnn8xBeeT6R/FRvr0EV4KI2DGsL84Qlv6P7isWqxGyU0LCwlSVCJN3jgHJ4Bl0KI2PJww==",
-      "path": "sharpdx/4.2.0",
-      "hashPath": "sharpdx.4.2.0.nupkg.sha512"
-    },
-    "SharpDX.D3DCompiler/4.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Rnsd6Ilp127xbXqhTit8WKFQUrXwWxqVGpglyWDNkIBCk0tWXNQEjrJpsl0KAObzyZaa33+EXAikLVt5fnd3GA==",
-      "path": "sharpdx.d3dcompiler/4.2.0",
-      "hashPath": "sharpdx.d3dcompiler.4.2.0.nupkg.sha512"
-    },
-    "SharpDX.Direct2D1/4.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Qs8LzDMaQf1u3KB8ArHu9pDv6itZ++QXs99a/bVAG+nKr0Hx5NG4mcN5vsfE0mVR2TkeHfeUm4PksRah6VUPtA==",
-      "path": "sharpdx.direct2d1/4.2.0",
-      "hashPath": "sharpdx.direct2d1.4.2.0.nupkg.sha512"
-    },
-    "SharpDX.Direct3D11/4.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-oTm/iT5X/IIuJ8kNYP+DTC/MhBhqtRF5dbgPPFgLBdQv0BKzNTzXQQXd7SveBFjQg6hXEAJ2jGCAzNYvGFc9LA==",
-      "path": "sharpdx.direct3d11/4.2.0",
-      "hashPath": "sharpdx.direct3d11.4.2.0.nupkg.sha512"
-    },
-    "SharpDX.Direct3D9/4.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-1KgqXvPj/j5hLYxfcOQoJdHskamu7EWg60n9LBAYhun7dR+sKS0ZDNb7NuKwFP1bM0HZqvokjXQIf3oA2NpdqA==",
-      "path": "sharpdx.direct3d9/4.2.0",
-      "hashPath": "sharpdx.direct3d9.4.2.0.nupkg.sha512"
-    },
-    "SharpDX.DXGI/4.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-UjKqkgWc8U+SP+j3LBzFP6OB6Ntapjih7Xo+g1rLcsGbIb5KwewBrBChaUu7sil8rWoeVU/k0EJd3SMN4VqNZw==",
-      "path": "sharpdx.dxgi/4.2.0",
-      "hashPath": "sharpdx.dxgi.4.2.0.nupkg.sha512"
-    },
-    "SharpDX.Mathematics/4.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-R2pcKLgdsP9p5WyTjHmGOZ0ka0zASAZYc6P4L6rSvjYhf6klGYbent7MiVwbkwkt9dD44p5brjy5IwAnVONWGw==",
-      "path": "sharpdx.mathematics/4.2.0",
-      "hashPath": "sharpdx.mathematics.4.2.0.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",

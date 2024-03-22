@@ -39,35 +39,6 @@
           }
         }
       },
-      "Cyotek.Drawing.BitmapFont/2.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp3.1/Cyotek.Drawing.BitmapFont.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Cyotek.Drawing.BitmapFont.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "HelixToolkit/2.25.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/HelixToolkit.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/HelixToolkit.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "HelixToolkit.Wpf/2.25.0": {
         "type": "package",
         "compile": {
@@ -79,48 +50,6 @@
           "lib/net462/HelixToolkit.Wpf.dll": {
             "related": ".XML"
           }
-        }
-      },
-      "HelixToolkit.Wpf.SharpDX/2.25.0": {
-        "type": "package",
-        "dependencies": {
-          "Cyotek.Drawing.BitmapFont": "2.0.0",
-          "HelixToolkit": "[2.25.0]",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
-          "SharpDX": "4.2.0",
-          "SharpDX.D3DCompiler": "4.2.0",
-          "SharpDX.DXGI": "4.2.0",
-          "SharpDX.Direct2D1": "4.2.0",
-          "SharpDX.Direct3D11": "4.2.0",
-          "SharpDX.Direct3D9": "4.2.0",
-          "SharpDX.Mathematics": "4.2.0"
-        },
-        "compile": {
-          "lib/net462/HelixToolkit.Wpf.SharpDX.dll": {
-            "related": ".XML"
-          }
-        },
-        "runtime": {
-          "lib/net462/HelixToolkit.Wpf.SharpDX.dll": {
-            "related": ".XML"
-          }
-        }
-      },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "build/Microsoft.Extensions.Logging.Abstractions.targets": {},
-          "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -371,126 +300,6 @@
           "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
             "assetType": "native",
             "rid": "ubuntu.16.10-x64"
-          }
-        }
-      },
-      "SharpDX/4.2.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/netstandard1.1/SharpDX.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.1/SharpDX.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "SharpDX.D3DCompiler/4.2.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "SharpDX": "4.2.0"
-        },
-        "compile": {
-          "lib/netstandard1.1/SharpDX.D3DCompiler.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.1/SharpDX.D3DCompiler.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "SharpDX.Direct2D1/4.2.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "SharpDX": "4.2.0",
-          "SharpDX.DXGI": "4.2.0"
-        },
-        "compile": {
-          "lib/netstandard1.1/SharpDX.Direct2D1.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.1/SharpDX.Direct2D1.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "SharpDX.Direct3D11/4.2.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "SharpDX": "4.2.0",
-          "SharpDX.DXGI": "4.2.0"
-        },
-        "compile": {
-          "lib/netstandard1.1/SharpDX.Direct3D11.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.1/SharpDX.Direct3D11.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "SharpDX.Direct3D9/4.2.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "SharpDX": "4.2.0"
-        },
-        "compile": {
-          "lib/netstandard1.3/SharpDX.Direct3D9.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.3/SharpDX.Direct3D9.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "SharpDX.DXGI/4.2.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "SharpDX": "4.2.0"
-        },
-        "compile": {
-          "lib/netstandard1.1/SharpDX.DXGI.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.1/SharpDX.DXGI.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "SharpDX.Mathematics/4.2.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "SharpDX": "4.2.0"
-        },
-        "compile": {
-          "lib/netstandard1.1/SharpDX.Mathematics.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.1/SharpDX.Mathematics.dll": {
-            "related": ".pdb;.xml"
           }
         }
       },
@@ -1553,60 +1362,6 @@
         "runtimes/win-x86/native/assimp.dll"
       ]
     },
-    "Cyotek.Drawing.BitmapFont/2.0.0": {
-      "sha512": "t6vYF0sXgNb6dP9QNbJxJWw3RdCEWC6Llv47oPYpobYAhmKcgmAZJv6HXK03DEUmo7ff6yPvsyEWTkia+UAONw==",
-      "type": "package",
-      "path": "cyotek.drawing.bitmapfont/2.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "cyotek.drawing.bitmapfont.2.0.0.nupkg.sha512",
-        "cyotek.drawing.bitmapfont.nuspec",
-        "icon.png",
-        "lib/net35/Cyotek.Drawing.BitmapFont.dll",
-        "lib/net35/Cyotek.Drawing.BitmapFont.xml",
-        "lib/net40/Cyotek.Drawing.BitmapFont.dll",
-        "lib/net40/Cyotek.Drawing.BitmapFont.xml",
-        "lib/net452/Cyotek.Drawing.BitmapFont.dll",
-        "lib/net452/Cyotek.Drawing.BitmapFont.xml",
-        "lib/net462/Cyotek.Drawing.BitmapFont.dll",
-        "lib/net462/Cyotek.Drawing.BitmapFont.xml",
-        "lib/net472/Cyotek.Drawing.BitmapFont.dll",
-        "lib/net472/Cyotek.Drawing.BitmapFont.xml",
-        "lib/net48/Cyotek.Drawing.BitmapFont.dll",
-        "lib/net48/Cyotek.Drawing.BitmapFont.xml",
-        "lib/netcoreapp2.1/Cyotek.Drawing.BitmapFont.dll",
-        "lib/netcoreapp2.1/Cyotek.Drawing.BitmapFont.xml",
-        "lib/netcoreapp2.2/Cyotek.Drawing.BitmapFont.dll",
-        "lib/netcoreapp2.2/Cyotek.Drawing.BitmapFont.xml",
-        "lib/netcoreapp3.1/Cyotek.Drawing.BitmapFont.dll",
-        "lib/netcoreapp3.1/Cyotek.Drawing.BitmapFont.xml",
-        "lib/netstandard1.3/Cyotek.Drawing.BitmapFont.dll",
-        "lib/netstandard1.3/Cyotek.Drawing.BitmapFont.xml",
-        "lib/netstandard2.0/Cyotek.Drawing.BitmapFont.dll",
-        "lib/netstandard2.0/Cyotek.Drawing.BitmapFont.xml",
-        "lib/netstandard2.1/Cyotek.Drawing.BitmapFont.dll",
-        "lib/netstandard2.1/Cyotek.Drawing.BitmapFont.xml"
-      ]
-    },
-    "HelixToolkit/2.25.0": {
-      "sha512": "UzF6KXadTdzrjTA8G00+V7RaQNpH+0729xByD6zhCgvDLvZ63CvH84/x2sjUO52bzHFphYixXtzf8G/OGVtz3w==",
-      "type": "package",
-      "path": "helixtoolkit/2.25.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "AUTHORS",
-        "CONTRIBUTORS",
-        "LICENSE",
-        "README.md",
-        "helixtoolkit.2.25.0.nupkg.sha512",
-        "helixtoolkit.nuspec",
-        "helixtoolkit.png",
-        "lib/netstandard2.0/HelixToolkit.dll",
-        "lib/netstandard2.0/HelixToolkit.xml"
-      ]
-    },
     "HelixToolkit.Wpf/2.25.0": {
       "sha512": "eoMdrDgeSFo1JH15f2X/E5/nZUMAqvWzR8qcVzjLarCxR5qNleRqF+UHSzyCkvygeeDLCC/uharpD/gysFYuHw==",
       "type": "package",
@@ -1623,76 +1378,6 @@
         "helixtoolkit.wpf.nuspec",
         "lib/net462/HelixToolkit.Wpf.XML",
         "lib/net462/HelixToolkit.Wpf.dll"
-      ]
-    },
-    "HelixToolkit.Wpf.SharpDX/2.25.0": {
-      "sha512": "hlzFdhV3DstHcFq2661tFdsX6XLu27A82zHSRb3Q7UOBTX80YhWDqiYtRsoQ00QAiN+W/xVh1HBY49xumLtDWg==",
-      "type": "package",
-      "path": "helixtoolkit.wpf.sharpdx/2.25.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "AUTHORS",
-        "CONTRIBUTORS",
-        "LICENSE",
-        "README.md",
-        "helixtoolkit.png",
-        "helixtoolkit.wpf.sharpdx.2.25.0.nupkg.sha512",
-        "helixtoolkit.wpf.sharpdx.nuspec",
-        "lib/net462/HelixToolkit.Wpf.SharpDX.XML",
-        "lib/net462/HelixToolkit.Wpf.SharpDX.dll"
-      ]
-    },
-    "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
-      "sha512": "/HggWBbTwy8TgebGSX5DBZ24ndhzi93sHUBDvP1IxbZD7FDokYzdAr6+vbWGjw2XAfR2EJ1sfKUotpjHnFWPxA==",
-      "type": "package",
-      "path": "microsoft.extensions.logging.abstractions/6.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "analyzers/dotnet/roslyn3.11/cs/Microsoft.Extensions.Logging.Generators.dll",
-        "analyzers/dotnet/roslyn3.11/cs/cs/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/de/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/es/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/fr/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/it/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/ja/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/ko/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/pl/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/pt-BR/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/ru/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/Microsoft.Extensions.Logging.Generators.dll",
-        "analyzers/dotnet/roslyn4.0/cs/cs/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/de/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/es/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/fr/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/it/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/ja/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/ko/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/pl/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/pt-BR/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/ru/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "build/Microsoft.Extensions.Logging.Abstractions.targets",
-        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Logging.Abstractions.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/Microsoft.Extensions.Logging.Abstractions.dll",
-        "lib/net461/Microsoft.Extensions.Logging.Abstractions.xml",
-        "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll",
-        "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
-        "microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
-        "microsoft.extensions.logging.abstractions.nuspec",
-        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
@@ -1998,170 +1683,6 @@
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
-      ]
-    },
-    "SharpDX/4.2.0": {
-      "sha512": "3pv0LFMvfK/dv1qISJnn8xBeeT6R/FRvr0EV4KI2DGsL84Qlv6P7isWqxGyU0LCwlSVCJN3jgHJ4Bl0KI2PJww==",
-      "type": "package",
-      "path": "sharpdx/4.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/.xml",
-        "lib/net40/SharpDX.dll",
-        "lib/net40/SharpDX.pdb",
-        "lib/net45/.xml",
-        "lib/net45/SharpDX.dll",
-        "lib/net45/SharpDX.pdb",
-        "lib/netstandard1.1/.xml",
-        "lib/netstandard1.1/SharpDX.dll",
-        "lib/netstandard1.1/SharpDX.pdb",
-        "lib/uap10.0/.xml",
-        "lib/uap10.0/SharpDX.dll",
-        "lib/uap10.0/SharpDX.pdb",
-        "lib/uap10.0/SharpDX.pri",
-        "sharpdx.4.2.0.nupkg.sha512",
-        "sharpdx.nuspec"
-      ]
-    },
-    "SharpDX.D3DCompiler/4.2.0": {
-      "sha512": "Rnsd6Ilp127xbXqhTit8WKFQUrXwWxqVGpglyWDNkIBCk0tWXNQEjrJpsl0KAObzyZaa33+EXAikLVt5fnd3GA==",
-      "type": "package",
-      "path": "sharpdx.d3dcompiler/4.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/SharpDX.D3DCompiler.dll",
-        "lib/net40/SharpDX.D3DCompiler.pdb",
-        "lib/net40/SharpDX.D3DCompiler.xml",
-        "lib/net45/SharpDX.D3DCompiler.dll",
-        "lib/net45/SharpDX.D3DCompiler.pdb",
-        "lib/net45/SharpDX.D3DCompiler.xml",
-        "lib/netstandard1.1/SharpDX.D3DCompiler.dll",
-        "lib/netstandard1.1/SharpDX.D3DCompiler.pdb",
-        "lib/netstandard1.1/SharpDX.D3DCompiler.xml",
-        "lib/uap10.0/SharpDX.D3DCompiler.dll",
-        "lib/uap10.0/SharpDX.D3DCompiler.pdb",
-        "lib/uap10.0/SharpDX.D3DCompiler.pri",
-        "lib/uap10.0/SharpDX.D3DCompiler.xml",
-        "sharpdx.d3dcompiler.4.2.0.nupkg.sha512",
-        "sharpdx.d3dcompiler.nuspec"
-      ]
-    },
-    "SharpDX.Direct2D1/4.2.0": {
-      "sha512": "Qs8LzDMaQf1u3KB8ArHu9pDv6itZ++QXs99a/bVAG+nKr0Hx5NG4mcN5vsfE0mVR2TkeHfeUm4PksRah6VUPtA==",
-      "type": "package",
-      "path": "sharpdx.direct2d1/4.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/SharpDX.Direct2D1.dll",
-        "lib/net40/SharpDX.Direct2D1.pdb",
-        "lib/net40/SharpDX.Direct2D1.xml",
-        "lib/net45/SharpDX.Direct2D1.dll",
-        "lib/net45/SharpDX.Direct2D1.pdb",
-        "lib/net45/SharpDX.Direct2D1.xml",
-        "lib/netstandard1.1/SharpDX.Direct2D1.dll",
-        "lib/netstandard1.1/SharpDX.Direct2D1.pdb",
-        "lib/netstandard1.1/SharpDX.Direct2D1.xml",
-        "lib/uap10.0/SharpDX.Direct2D1.dll",
-        "lib/uap10.0/SharpDX.Direct2D1.pdb",
-        "lib/uap10.0/SharpDX.Direct2D1.pri",
-        "lib/uap10.0/SharpDX.Direct2D1.xml",
-        "sharpdx.direct2d1.4.2.0.nupkg.sha512",
-        "sharpdx.direct2d1.nuspec"
-      ]
-    },
-    "SharpDX.Direct3D11/4.2.0": {
-      "sha512": "oTm/iT5X/IIuJ8kNYP+DTC/MhBhqtRF5dbgPPFgLBdQv0BKzNTzXQQXd7SveBFjQg6hXEAJ2jGCAzNYvGFc9LA==",
-      "type": "package",
-      "path": "sharpdx.direct3d11/4.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/SharpDX.Direct3D11.dll",
-        "lib/net40/SharpDX.Direct3D11.pdb",
-        "lib/net40/SharpDX.Direct3D11.xml",
-        "lib/net45/SharpDX.Direct3D11.dll",
-        "lib/net45/SharpDX.Direct3D11.pdb",
-        "lib/net45/SharpDX.Direct3D11.xml",
-        "lib/netstandard1.1/SharpDX.Direct3D11.dll",
-        "lib/netstandard1.1/SharpDX.Direct3D11.pdb",
-        "lib/netstandard1.1/SharpDX.Direct3D11.xml",
-        "lib/uap10.0/SharpDX.Direct3D11.dll",
-        "lib/uap10.0/SharpDX.Direct3D11.pdb",
-        "lib/uap10.0/SharpDX.Direct3D11.pri",
-        "lib/uap10.0/SharpDX.Direct3D11.xml",
-        "sharpdx.direct3d11.4.2.0.nupkg.sha512",
-        "sharpdx.direct3d11.nuspec"
-      ]
-    },
-    "SharpDX.Direct3D9/4.2.0": {
-      "sha512": "1KgqXvPj/j5hLYxfcOQoJdHskamu7EWg60n9LBAYhun7dR+sKS0ZDNb7NuKwFP1bM0HZqvokjXQIf3oA2NpdqA==",
-      "type": "package",
-      "path": "sharpdx.direct3d9/4.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/SharpDX.Direct3D9.dll",
-        "lib/net40/SharpDX.Direct3D9.pdb",
-        "lib/net40/SharpDX.Direct3D9.xml",
-        "lib/net45/SharpDX.Direct3D9.dll",
-        "lib/net45/SharpDX.Direct3D9.pdb",
-        "lib/net45/SharpDX.Direct3D9.xml",
-        "lib/netstandard1.3/SharpDX.Direct3D9.dll",
-        "lib/netstandard1.3/SharpDX.Direct3D9.pdb",
-        "lib/netstandard1.3/SharpDX.Direct3D9.xml",
-        "sharpdx.direct3d9.4.2.0.nupkg.sha512",
-        "sharpdx.direct3d9.nuspec"
-      ]
-    },
-    "SharpDX.DXGI/4.2.0": {
-      "sha512": "UjKqkgWc8U+SP+j3LBzFP6OB6Ntapjih7Xo+g1rLcsGbIb5KwewBrBChaUu7sil8rWoeVU/k0EJd3SMN4VqNZw==",
-      "type": "package",
-      "path": "sharpdx.dxgi/4.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/SharpDX.DXGI.dll",
-        "lib/net40/SharpDX.DXGI.pdb",
-        "lib/net40/SharpDX.DXGI.xml",
-        "lib/net45/SharpDX.DXGI.dll",
-        "lib/net45/SharpDX.DXGI.pdb",
-        "lib/net45/SharpDX.DXGI.xml",
-        "lib/netstandard1.1/SharpDX.DXGI.dll",
-        "lib/netstandard1.1/SharpDX.DXGI.pdb",
-        "lib/netstandard1.1/SharpDX.DXGI.xml",
-        "lib/uap10.0/SharpDX.DXGI.dll",
-        "lib/uap10.0/SharpDX.DXGI.pdb",
-        "lib/uap10.0/SharpDX.DXGI.pri",
-        "lib/uap10.0/SharpDX.DXGI.xml",
-        "sharpdx.dxgi.4.2.0.nupkg.sha512",
-        "sharpdx.dxgi.nuspec"
-      ]
-    },
-    "SharpDX.Mathematics/4.2.0": {
-      "sha512": "R2pcKLgdsP9p5WyTjHmGOZ0ka0zASAZYc6P4L6rSvjYhf6klGYbent7MiVwbkwkt9dD44p5brjy5IwAnVONWGw==",
-      "type": "package",
-      "path": "sharpdx.mathematics/4.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/SharpDX.Mathematics.dll",
-        "lib/net40/SharpDX.Mathematics.pdb",
-        "lib/net40/SharpDX.Mathematics.xml",
-        "lib/net45/SharpDX.Mathematics.dll",
-        "lib/net45/SharpDX.Mathematics.pdb",
-        "lib/net45/SharpDX.Mathematics.xml",
-        "lib/netstandard1.1/SharpDX.Mathematics.dll",
-        "lib/netstandard1.1/SharpDX.Mathematics.pdb",
-        "lib/netstandard1.1/SharpDX.Mathematics.xml",
-        "lib/uap10.0/SharpDX.Mathematics.dll",
-        "lib/uap10.0/SharpDX.Mathematics.pdb",
-        "lib/uap10.0/SharpDX.Mathematics.pri",
-        "lib/uap10.0/SharpDX.Mathematics.xml",
-        "sharpdx.mathematics.4.2.0.nupkg.sha512",
-        "sharpdx.mathematics.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -5132,8 +4653,7 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "AssimpNet >= 4.1.0",
-      "HelixToolkit.Wpf >= 2.25.0",
-      "HelixToolkit.Wpf.SharpDX >= 2.25.0"
+      "HelixToolkit.Wpf >= 2.25.0"
     ]
   },
   "packageFolders": {
@@ -5188,10 +4708,6 @@
           "HelixToolkit.Wpf": {
             "target": "Package",
             "version": "[2.25.0, )"
-          },
-          "HelixToolkit.Wpf.SharpDX": {
-            "target": "Package",
-            "version": "[2.25.0, )"
           }
         },
         "imports": [
@@ -5242,16 +4758,6 @@
       "warningLevel": 1,
       "message": "Package 'HelixToolkit.Wpf 2.25.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "HelixToolkit.Wpf",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'HelixToolkit.Wpf.SharpDX 2.25.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "HelixToolkit.Wpf.SharpDX",
       "targetGraphs": [
         "net6.0-windows7.0"
       ]
