@@ -43,10 +43,28 @@ namespace _3D_Printing
         private void btnImport_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Supported Files|*.obj;*.fbx|OBJ Files (*.obj)|*.obj|FBX Files (*.fbx)|*.fbx";
+            openFileDialog.Filter = "Supported Files|*.3ds;*.blend;*.dae;*.fbx;*.obj;*.stl;*.max|3DS Files (*.3ds)|*.3ds|Blender Files (*.blend)|*.blend|Collada Files (*.dae)|*.dae|FBX Files (*.fbx)|*.fbx|OBJ Files (*.obj)|*.obj|STL Files (*.stl)|*.stl|3ds Max Files (*.max)|*.max";
             if (openFileDialog.ShowDialog() == true)
             {
-                LoadFile(openFileDialog.FileName);
+                string filePath = openFileDialog.FileName;
+                string fileExtension = System.IO.Path.GetExtension(filePath).ToLower();
+
+                if (fileExtension == ".obj")
+                {
+                    LoadFile(filePath);
+                }
+                else
+                {
+                    string objFilePath = ConvertToObj(filePath);
+                    if (objFilePath != null)
+                    {
+                        LoadFile(objFilePath);
+                    }
+                    else
+                    {
+                        MessageBox.Show("File conversion failed.");
+                    }
+                }
             }
         }
 
@@ -76,6 +94,29 @@ namespace _3D_Printing
             catch (Exception ex)
             {
                 MessageBox.Show("Error loading file: " + ex.Message);
+            }
+        }
+
+        private string ConvertToObj(string filePath)
+        {
+            try
+            {
+                // Initialize Assimp
+                AssimpContext assimpContext = new AssimpContext();
+
+                // Import the file
+                Scene scene = assimpContext.ImportFile(filePath, PostProcessSteps.Triangulate | PostProcessSteps.FlipUVs);
+
+                // Save the scene as .obj file
+                string objFilePath = System.IO.Path.ChangeExtension(filePath, ".obj");
+                assimpContext.ExportFile(scene, objFilePath, "obj");
+
+                return objFilePath;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error converting file: " + ex.Message);
+                return null;
             }
         }
 
