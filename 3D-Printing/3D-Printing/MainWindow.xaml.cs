@@ -114,8 +114,11 @@ namespace _3D_Printing
                 // Import the file
                 Scene scene = assimpContext.ImportFile(filePath, PostProcessSteps.Triangulate | PostProcessSteps.FlipUVs);
 
+                // Create the new file path with "_converted" appended to the file name
+                string newFileName = System.IO.Path.GetFileNameWithoutExtension(filePath) + "_converted.obj";
+                string objFilePath = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(filePath), newFileName);
+
                 // Save the scene as .obj file
-                string objFilePath = System.IO.Path.ChangeExtension(filePath, ".obj");
                 assimpContext.ExportFile(scene, objFilePath, "obj");
 
                 return objFilePath;
