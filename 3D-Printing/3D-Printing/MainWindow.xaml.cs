@@ -47,6 +47,30 @@ namespace _3D_Printing
             StartPrinterScanTimer();
         }
 
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            // Add CameraChanged event handler
+            helixViewport.CameraChanged += HelixViewport_CameraChanged;
+        }
+
+        private void HelixViewport_CameraChanged(object sender, RoutedEventArgs e)
+        {
+            // Retrieve camera's position
+            Point3D cameraPosition = helixViewport.Camera.Position;
+
+            // Update UI to display coordinates
+            UpdateCoordinatesUI(cameraPosition);
+        }
+
+        private void UpdateCoordinatesUI(Point3D position)
+        {
+            // Display X, Y, Z coordinates
+            txtXCoordinate.Text = $"X: {position.X}";
+            txtYCoordinate.Text = $"Y: {position.Y}";
+            txtZCoordinate.Text = $"Z: {position.Z}";
+        }
+
+
         private void btnImport_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
