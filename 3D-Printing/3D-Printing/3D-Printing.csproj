@@ -9,6 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Ab3d.DXEngine.Assimp" Version="1.1.7934" />
+    <PackageReference Include="Ab3d.PowerToys" Version="11.0.8746" />
+    <PackageReference Include="Ab3d.PowerToys.Input" Version="11.0.8746" />
     <PackageReference Include="AssimpNet" Version="4.1.0" />
     <PackageReference Include="HelixToolkit.Wpf" Version="2.25.0" />
   </ItemGroup>

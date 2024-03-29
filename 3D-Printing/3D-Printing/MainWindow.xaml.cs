@@ -71,13 +71,15 @@ namespace _3D_Printing
         }
 
 
+        private string filePath; // Add this variable to store the file path
+
         private void btnImport_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Supported Files|*.3ds;*.blend;*.dae;*.fbx;*.obj;*.stl;*.max|3DS Files (*.3ds)|*.3ds|Blender Files (*.blend)|*.blend|Collada Files (*.dae)|*.dae|FBX Files (*.fbx)|*.fbx|OBJ Files (*.obj)|*.obj|STL Files (*.stl)|*.stl|3ds Max Files (*.max)|*.max";
+            openFileDialog.Filter = "Supported Files|*.obj|OBJ Files (*.obj)|*.obj";
             if (openFileDialog.ShowDialog() == true)
             {
-                string filePath = openFileDialog.FileName;
+                filePath = openFileDialog.FileName; // Save the file path
                 string fileExtension = System.IO.Path.GetExtension(filePath).ToLower();
 
                 if (fileExtension == ".obj")
@@ -98,6 +100,7 @@ namespace _3D_Printing
                 }
             }
         }
+
 
         private void LoadFile(string filePath)
         {
@@ -252,23 +255,84 @@ namespace _3D_Printing
             selectedPrinter = cbPrinters.SelectedItem as string;
         }
 
+        private string ConvertToStl(string filePath)
+        {
+            try
+            {
+                // Initialize Assimp
+                AssimpContext assimpContext = new AssimpContext();
+
+                // Import the file
+                Scene scene = assimpContext.ImportFile(filePath, PostProcessSteps.Triangulate | PostProcessSteps.FlipUVs);
+
+                // Get the desktop path
+                string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+                // Create the new file path with ".stl" extension on desktop
+                string newFileName = System.IO.Path.GetFileNameWithoutExtension(filePath) + ".stl";
+                string stlFilePath = System.IO.Path.Combine(desktopPath, newFileName);
+
+                // Save the scene as .stl file
+                assimpContext.ExportFile(scene, stlFilePath, "stl");
+
+                return stlFilePath;
+            }
+            catch (Exception ex)
+            {
+                // Ném ra ngoại lệ để xử lý ở phần gọi của phương thức
+                throw new Exception("Error converting file: " + ex.Message);
+            }
+        }
+
+
+        //private void PrintModel(string stlFilePath)
+        //{
+        //    try
+        //    {
+        //        ProcessStartInfo info = new ProcessStartInfo();
+        //        info.FileName = "meshlab.exe"; // Đổi thành đường dẫn của ứng dụng bạn muốn sử dụng
+        //        info.Arguments = stlFilePath;
+        //        info.CreateNoWindow = true;
+        //        info.WindowStyle = ProcessWindowStyle.Hidden;
+
+        //        Process.Start(info);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Error printing: " + ex.Message);
+        //    }
+        //}
+
+
+
         private void btnPrint_Click(object sender, RoutedEventArgs e)
         {
             if (currentModelVisual != null && !string.IsNullOrEmpty(selectedPrinter))
             {
                 try
                 {
-                    MessageBox.Show("printing: " + currentModelVisual.ToString());
+                    string stlFilePath = ConvertToStl(filePath); // Chuyển đổi sang định dạng .stl
+                    if (stlFilePath != null)
+                    {
+                        MessageBox.Show("Conversion completed: " + stlFilePath);
+                        // Không cần gọi phương thức PrintModel ở đây
+                    }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error printing: " + ex.Message);
+                    MessageBox.Show("Error converting: " + ex.Message);
                 }
             }
             else
             {
-                MessageBox.Show("Please import a 3D model and select a printer before printing.");
+                MessageBox.Show("Please import a 3D model before converting.");
             }
         }
+
+
+
+
+
+
     }
 }

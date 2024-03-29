@@ -49,6 +49,18 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "Ab3d.DXEngine.Assimp": {
+              "target": "Package",
+              "version": "[1.1.7934, )"
+            },
+            "Ab3d.PowerToys": {
+              "target": "Package",
+              "version": "[11.0.8746, )"
+            },
+            "Ab3d.PowerToys.Input": {
+              "target": "Package",
+              "version": "[11.0.8746, )"
+            },
             "AssimpNet": {
               "target": "Package",
               "version": "[4.1.0, )"

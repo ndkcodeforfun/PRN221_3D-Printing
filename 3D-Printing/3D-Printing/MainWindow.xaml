@@ -13,7 +13,7 @@
         <TextBox x:Name="txtXCoordinate" HorizontalAlignment="Left" Margin="22,45,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtYCoordinate" HorizontalAlignment="Left" Margin="22,113,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtZCoordinate" HorizontalAlignment="Left" Margin="22,76,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnImport" Content="Import file (.obj / .fbx)" HorizontalAlignment="Left" Margin="391,9,0,0" VerticalAlignment="Top" FontWeight="Bold" Click="btnImport_Click"/>
+        <Button x:Name="btnImport" Content="Import file (.obj)" HorizontalAlignment="Left" Margin="391,9,0,0" VerticalAlignment="Top" FontWeight="Bold" Click="btnImport_Click"/>
         <ComboBox x:Name="cbPrinters" HorizontalAlignment="Left" Margin="592,9,0,0" VerticalAlignment="Top" Width="120" Height="20"/>
         <Button x:Name="btnPrint" Content="Print" HorizontalAlignment="Left" Margin="535,9,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="20" Click="btnPrint_Click"/>
     </Grid>

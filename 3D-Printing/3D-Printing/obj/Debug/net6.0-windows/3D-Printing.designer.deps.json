@@ -6,6 +6,69 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
+      "Ab3d.DXEngine/4.4.7874": {
+        "dependencies": {
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0",
+          "SharpDX.Direct3D11": "4.2.0",
+          "SharpDX.Mathematics": "4.2.0"
+        },
+        "runtime": {
+          "lib/net5.0-windows/Ab3d.DXEngine.dll": {
+            "assemblyVersion": "4.4.7874.2050",
+            "fileVersion": "4.4.7874.2050"
+          }
+        }
+      },
+      "Ab3d.DXEngine.Assimp/1.1.7934": {
+        "dependencies": {
+          "Ab3d.DXEngine": "4.4.7874",
+          "Ab3d.DXEngine.Wpf": "4.4.7874",
+          "SharpDX.Direct3D11": "4.2.0",
+          "SharpDX.Mathematics": "4.2.0",
+          "Silk.NET.Assimp": "2.8.0"
+        },
+        "runtime": {
+          "lib/net5.0-windows/Ab3d.DXEngine.Assimp.dll": {
+            "assemblyVersion": "1.0.7876.2050",
+            "fileVersion": "1.0.7876.2050"
+          }
+        }
+      },
+      "Ab3d.DXEngine.Wpf/4.4.7874": {
+        "dependencies": {
+          "Ab3d.DXEngine": "4.4.7874",
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0",
+          "SharpDX.Direct3D11": "4.2.0",
+          "SharpDX.Mathematics": "4.2.0"
+        },
+        "runtime": {
+          "lib/net5.0-windows/Ab3d.DXEngine.Wpf.dll": {
+            "assemblyVersion": "4.4.7874.2050",
+            "fileVersion": "4.4.7874.2050"
+          }
+        }
+      },
+      "Ab3d.PowerToys/11.0.8746": {
+        "runtime": {
+          "lib/net6.0-windows7.0/Ab3d.PowerToys.dll": {
+            "assemblyVersion": "11.0.8746.2060",
+            "fileVersion": "11.0.8746.2060"
+          }
+        }
+      },
+      "Ab3d.PowerToys.Input/11.0.8746": {
+        "dependencies": {
+          "Ab3d.PowerToys": "11.0.8746"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Ab3d.PowerToys.Input.dll": {
+            "assemblyVersion": "11.0.8746.2060",
+            "fileVersion": "11.0.8746.2060"
+          }
+        }
+      },
       "AssimpNet/4.1.0": {
         "dependencies": {
           "NETStandard.Library": "1.6.1"
@@ -44,6 +107,34 @@
           "lib/net462/HelixToolkit.Wpf.dll": {
             "assemblyVersion": "2.25.0.0",
             "fileVersion": "2.25.0.0"
+          }
+        }
+      },
+      "Microsoft.Bcl.HashCode/1.1.0": {
+        "runtime": {
+          "lib/netcoreapp2.1/Microsoft.Bcl.HashCode.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {},
+      "Microsoft.DotNet.PlatformAbstractions/3.1.6": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.DotNet.PlatformAbstractions.dll": {
+            "assemblyVersion": "3.1.6.0",
+            "fileVersion": "3.100.620.31604"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyModel/3.1.1": {
+        "dependencies": {
+          "System.Text.Json": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll": {
+            "assemblyVersion": "3.1.1.0",
+            "fileVersion": "3.100.119.60804"
           }
         }
       },
@@ -237,6 +328,98 @@
             "rid": "ubuntu.16.10-x64",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SharpDX/4.2.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SharpDX.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.2.0.0"
+          }
+        }
+      },
+      "SharpDX.Direct3D11/4.2.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SharpDX.Direct3D11.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.2.0.0"
+          }
+        }
+      },
+      "SharpDX.DXGI/4.2.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "SharpDX": "4.2.0"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SharpDX.DXGI.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.2.0.0"
+          }
+        }
+      },
+      "SharpDX.Mathematics/4.2.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "SharpDX": "4.2.0"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SharpDX.Mathematics.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.2.0.0"
+          }
+        }
+      },
+      "Silk.NET.Assimp/2.8.0": {
+        "dependencies": {
+          "Silk.NET.Core": "2.8.0",
+          "Silk.NET.Maths": "2.8.0",
+          "Ultz.Native.Assimp": "5.0.1.2"
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Assimp.dll": {
+            "assemblyVersion": "2.8.0.0",
+            "fileVersion": "2.8.0.0"
+          }
+        }
+      },
+      "Silk.NET.Core/2.8.0": {
+        "dependencies": {
+          "Microsoft.Bcl.HashCode": "1.1.0",
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.DotNet.PlatformAbstractions": "3.1.6",
+          "Microsoft.Extensions.DependencyModel": "3.1.1",
+          "System.Memory": "4.5.3",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Reflection.Emit": "4.7.0",
+          "System.Reflection.Emit.ILGeneration": "4.7.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.7.0"
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Core.dll": {
+            "assemblyVersion": "2.8.0.0",
+            "fileVersion": "2.8.0.0"
+          }
+        }
+      },
+      "Silk.NET.Maths/2.8.0": {
+        "dependencies": {
+          "Microsoft.Bcl.HashCode": "1.1.0",
+          "Ultz.Bcl.Half": "1.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Maths.dll": {
+            "assemblyVersion": "2.8.0.0",
+            "fileVersion": "2.8.0.0"
           }
         }
       },
@@ -485,8 +668,8 @@
           "System.Linq": "4.3.0",
           "System.ObjectModel": "4.3.0",
           "System.Reflection": "4.3.0",
-          "System.Reflection.Emit": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Reflection.Emit": "4.7.0",
+          "System.Reflection.Emit.ILGeneration": "4.7.0",
           "System.Reflection.Emit.Lightweight": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
@@ -503,6 +686,7 @@
           }
         }
       },
+      "System.Memory/4.5.3": {},
       "System.Net.Http/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -565,6 +749,7 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
+      "System.Numerics.Vectors/4.5.0": {},
       "System.ObjectModel/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -589,38 +774,12 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Reflection.Emit/4.3.0": {
-        "dependencies": {
-          "System.IO": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Runtime": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Reflection.Emit.dll": {
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.6.24705.1"
-          }
-        }
-      },
-      "System.Reflection.Emit.ILGeneration/4.3.0": {
-        "dependencies": {
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Runtime": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Reflection.Emit.ILGeneration.dll": {
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.6.24705.1"
-          }
-        }
-      },
+      "System.Reflection.Emit/4.7.0": {},
+      "System.Reflection.Emit.ILGeneration/4.7.0": {},
       "System.Reflection.Emit.Lightweight/4.3.0": {
         "dependencies": {
           "System.Reflection": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Reflection.Emit.ILGeneration": "4.7.0",
           "System.Reflection.Primitives": "4.3.0",
           "System.Runtime": "4.3.0"
         },
@@ -671,6 +830,14 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.1.0"
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.7.0": {
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "4.0.6.0",
+            "fileVersion": "4.700.19.56404"
+          }
         }
       },
       "System.Runtime.Extensions/4.3.0": {
@@ -976,6 +1143,14 @@
           "System.Text.Encoding": "4.3.0"
         }
       },
+      "System.Text.Json/4.7.0": {
+        "runtime": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
       "System.Text.RegularExpressions/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -1072,10 +1247,70 @@
             "fileVersion": "4.6.24705.1"
           }
         }
+      },
+      "Ultz.Bcl.Half/1.0.0": {},
+      "Ultz.Native.Assimp/5.0.1.2": {
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libassimp.so.5": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libassimp.5.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/Assimp64.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "5.0.0.0"
+          },
+          "runtimes/win-x86/native/Assimp32.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "5.0.0.0"
+          }
+        }
       }
     }
   },
   "libraries": {
+    "Ab3d.DXEngine/4.4.7874": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zUaQLkegVfi4pPqLVUceFFha+GZNRLtvc0wUHj5IwnCCD03Wl3TCjByw8wBGjSKf+6fZE6UfMXU0131eIZlhIw==",
+      "path": "ab3d.dxengine/4.4.7874",
+      "hashPath": "ab3d.dxengine.4.4.7874.nupkg.sha512"
+    },
+    "Ab3d.DXEngine.Assimp/1.1.7934": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-76wlvk0vjpCWash5JmtNBZCVgxgdSOhuZhGB7OFlIOjruSBtpsqz2zaLVKKbwY57mdlWmiB9w7MhShW3YiFEWw==",
+      "path": "ab3d.dxengine.assimp/1.1.7934",
+      "hashPath": "ab3d.dxengine.assimp.1.1.7934.nupkg.sha512"
+    },
+    "Ab3d.DXEngine.Wpf/4.4.7874": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ah7LYTiXPefpQ5YjE/EsOrt5EiJuzkqTfWcU2lnbmbg4APGDJmio6u91d1RWhXSEN2pUSy7SUkSYGlhRSvKPrA==",
+      "path": "ab3d.dxengine.wpf/4.4.7874",
+      "hashPath": "ab3d.dxengine.wpf.4.4.7874.nupkg.sha512"
+    },
+    "Ab3d.PowerToys/11.0.8746": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MIldHhBwvWDa1nsSlY0DPrRnEsuWggi/7IFWD7dvZhexnsiUl4W1u6BU3ja/klUebw6l5TqNSxb+B5jvORuONA==",
+      "path": "ab3d.powertoys/11.0.8746",
+      "hashPath": "ab3d.powertoys.11.0.8746.nupkg.sha512"
+    },
+    "Ab3d.PowerToys.Input/11.0.8746": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qxqWsTH3jXvXZrJv4v0w6f5LFfJwRXpH1ipb8NYZD6H0rhH2Y6mB8G87HqnDCC6sUc7fXr7qXsfqDAdtjPYJOw==",
+      "path": "ab3d.powertoys.input/11.0.8746",
+      "hashPath": "ab3d.powertoys.input.11.0.8746.nupkg.sha512"
+    },
     "AssimpNet/4.1.0": {
       "type": "package",
       "serviceable": true,
@@ -1089,6 +1324,34 @@
       "sha512": "sha512-eoMdrDgeSFo1JH15f2X/E5/nZUMAqvWzR8qcVzjLarCxR5qNleRqF+UHSzyCkvygeeDLCC/uharpD/gysFYuHw==",
       "path": "helixtoolkit.wpf/2.25.0",
       "hashPath": "helixtoolkit.wpf.2.25.0.nupkg.sha512"
+    },
+    "Microsoft.Bcl.HashCode/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-J2G1k+u5unBV+aYcwxo94ip16Rkp65pgWFb0R6zwJipzWNMgvqlWeuI7/+R+e8bob66LnSG+llLJ+z8wI94cHg==",
+      "path": "microsoft.bcl.hashcode/1.1.0",
+      "hashPath": "microsoft.bcl.hashcode.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
+    "Microsoft.DotNet.PlatformAbstractions/3.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jek4XYaQ/PGUwDKKhwR8K47Uh1189PFzMeLqO83mXrXQVIpARZCcfuDedH50YDTepBkfijCZN5U/vZi++erxtg==",
+      "path": "microsoft.dotnet.platformabstractions/3.1.6",
+      "hashPath": "microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyModel/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JjNCPx5Jbk7WTjaFI9Kyq+ZRVwMJ7Ee2AmgLKraQUS8AuciAO+euxHAhlhv0AWCsVyibyRr+5USxjyc7U6VsMA==",
+      "path": "microsoft.extensions.dependencymodel/3.1.1",
+      "hashPath": "microsoft.extensions.dependencymodel.3.1.1.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -1230,6 +1493,55 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
     },
+    "SharpDX/4.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3pv0LFMvfK/dv1qISJnn8xBeeT6R/FRvr0EV4KI2DGsL84Qlv6P7isWqxGyU0LCwlSVCJN3jgHJ4Bl0KI2PJww==",
+      "path": "sharpdx/4.2.0",
+      "hashPath": "sharpdx.4.2.0.nupkg.sha512"
+    },
+    "SharpDX.Direct3D11/4.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oTm/iT5X/IIuJ8kNYP+DTC/MhBhqtRF5dbgPPFgLBdQv0BKzNTzXQQXd7SveBFjQg6hXEAJ2jGCAzNYvGFc9LA==",
+      "path": "sharpdx.direct3d11/4.2.0",
+      "hashPath": "sharpdx.direct3d11.4.2.0.nupkg.sha512"
+    },
+    "SharpDX.DXGI/4.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UjKqkgWc8U+SP+j3LBzFP6OB6Ntapjih7Xo+g1rLcsGbIb5KwewBrBChaUu7sil8rWoeVU/k0EJd3SMN4VqNZw==",
+      "path": "sharpdx.dxgi/4.2.0",
+      "hashPath": "sharpdx.dxgi.4.2.0.nupkg.sha512"
+    },
+    "SharpDX.Mathematics/4.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R2pcKLgdsP9p5WyTjHmGOZ0ka0zASAZYc6P4L6rSvjYhf6klGYbent7MiVwbkwkt9dD44p5brjy5IwAnVONWGw==",
+      "path": "sharpdx.mathematics/4.2.0",
+      "hashPath": "sharpdx.mathematics.4.2.0.nupkg.sha512"
+    },
+    "Silk.NET.Assimp/2.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UFOI3GUL59fGV4Q5VpPPSnhSv0OTKRwl2fZu6ugpfzKw0YE9EYz+IX2eyw8ehr9VcN52ylavOkA+jxi1niXsEg==",
+      "path": "silk.net.assimp/2.8.0",
+      "hashPath": "silk.net.assimp.2.8.0.nupkg.sha512"
+    },
+    "Silk.NET.Core/2.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X/fJVnkVIsfFXrV+eUnkhbl5ka+cwy/XkLKC8HVsX3HSvzHaeHnI0kcfIsyMBukwhmFVQBOU0J6lfv4kWkD2xA==",
+      "path": "silk.net.core/2.8.0",
+      "hashPath": "silk.net.core.2.8.0.nupkg.sha512"
+    },
+    "Silk.NET.Maths/2.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Bn1+SwGqS+z7j0j8Eb9To2YPE2184t2oU78SSCtYo2gOgY12dsOW2Pjkta/WHxAJjy2+sbo4oaZ+xih6aaAjhQ==",
+      "path": "silk.net.maths/2.8.0",
+      "hashPath": "silk.net.maths.2.8.0.nupkg.sha512"
+    },
     "System.AppContext/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1363,6 +1675,13 @@
       "path": "system.linq.expressions/4.3.0",
       "hashPath": "system.linq.expressions.4.3.0.nupkg.sha512"
     },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
     "System.Net.Http/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1384,6 +1703,13 @@
       "path": "system.net.sockets/4.3.0",
       "hashPath": "system.net.sockets.4.3.0.nupkg.sha512"
     },
+    "System.Numerics.Vectors/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
+    },
     "System.ObjectModel/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1398,19 +1724,19 @@
       "path": "system.reflection/4.3.0",
       "hashPath": "system.reflection.4.3.0.nupkg.sha512"
     },
-    "System.Reflection.Emit/4.3.0": {
+    "System.Reflection.Emit/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-228FG0jLcIwTVJyz8CLFKueVqQK36ANazUManGaJHkO0icjiIypKW7YLWLIWahyIkdh5M7mV2dJepllLyA1SKg==",
-      "path": "system.reflection.emit/4.3.0",
-      "hashPath": "system.reflection.emit.4.3.0.nupkg.sha512"
+      "sha512": "sha512-VR4kk8XLKebQ4MZuKuIni/7oh+QGFmZW3qORd1GvBq/8026OpW501SzT/oypwiQl4TvT8ErnReh/NzY9u+C6wQ==",
+      "path": "system.reflection.emit/4.7.0",
+      "hashPath": "system.reflection.emit.4.7.0.nupkg.sha512"
     },
-    "System.Reflection.Emit.ILGeneration/4.3.0": {
+    "System.Reflection.Emit.ILGeneration/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-59tBslAk9733NXLrUJrwNZEzbMAcu8k344OYo+wfSVygcgZ9lgBdGIzH/nrg3LYhXceynyvTc8t5/GD4Ri0/ng==",
-      "path": "system.reflection.emit.ilgeneration/4.3.0",
-      "hashPath": "system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512"
+      "sha512": "sha512-AucBYo3DSI0IDxdUjKksBcQJXPHyoPyrCXYURW1WDsLI4M65Ar/goSHjdnHOAY9MiYDNKqDlIgaYm+zL2hA1KA==",
+      "path": "system.reflection.emit.ilgeneration/4.7.0",
+      "hashPath": "system.reflection.emit.ilgeneration.4.7.0.nupkg.sha512"
     },
     "System.Reflection.Emit.Lightweight/4.3.0": {
       "type": "package",
@@ -1453,6 +1779,13 @@
       "sha512": "sha512-JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
       "path": "system.runtime/4.3.0",
       "hashPath": "system.runtime.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IpU1lcHz8/09yDr9N+Juc7SCgNUz+RohkCQI+KsWKR67XxpFr8Z6c8t1iENCXZuRuNCc4HBwme/MDHNVCwyAKg==",
+      "path": "system.runtime.compilerservices.unsafe/4.7.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512"
     },
     "System.Runtime.Extensions/4.3.0": {
       "type": "package",
@@ -1552,6 +1885,13 @@
       "path": "system.text.encoding.extensions/4.3.0",
       "hashPath": "system.text.encoding.extensions.4.3.0.nupkg.sha512"
     },
+    "System.Text.Json/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IPq/x/d5nAcnD3vIyM3AbPOaTgcqrh0AqPSx7U53UFu3M6k1TH1u/eXc9/h4jm/3mpP1WRUpevlPY4PACd7AWw==",
+      "path": "system.text.json/4.7.0",
+      "hashPath": "system.text.json.4.7.0.nupkg.sha512"
+    },
     "System.Text.RegularExpressions/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1600,6 +1940,20 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "Ultz.Bcl.Half/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L4b7xAqEmgNgCYBGdyWhemEIazgr0rPhm9sDrrGjym9zJpt8JQx7mtiSGn8QsVM/9H0pL2CRvK1hdbDrTGydXg==",
+      "path": "ultz.bcl.half/1.0.0",
+      "hashPath": "ultz.bcl.half.1.0.0.nupkg.sha512"
+    },
+    "Ultz.Native.Assimp/5.0.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-d6Jz7X9oOIi21sARCMNyAXE+d107qS0JxWrJiUBVYNbhlyRQzGWuIkPo7Ky+6/Xijx2nrG/F5Y8fS9lE3aHEIA==",
+      "path": "ultz.native.assimp/5.0.1.2",
+      "hashPath": "ultz.native.assimp.5.0.1.2.nupkg.sha512"
     }
   }
 }
