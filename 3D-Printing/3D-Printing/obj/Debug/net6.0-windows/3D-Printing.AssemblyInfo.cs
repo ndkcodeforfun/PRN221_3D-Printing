@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("3D-Printing")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1013ad10afb28138abed469555b11607afac28b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8b6f802e3d7d57c87a6b2dbe2fc4117c2f44680")]
 [assembly: System.Reflection.AssemblyProductAttribute("3D-Printing")]
 [assembly: System.Reflection.AssemblyTitleAttribute("3D-Printing")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
