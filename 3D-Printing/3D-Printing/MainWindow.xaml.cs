@@ -337,6 +337,7 @@ namespace _3D_Printing
 
         private void btnPrint_Click(object sender, RoutedEventArgs e)
         {
+            cbPrinters_SelectionChanged(cbPrinters, null);
             if (currentModelVisual != null && !string.IsNullOrEmpty(selectedPrinter))
             {
                 try
@@ -358,12 +359,6 @@ namespace _3D_Printing
                 MessageBox.Show("Please import a 3D model before converting.");
             }
         }
-
-
-
-
-
-
 
     }
 }
