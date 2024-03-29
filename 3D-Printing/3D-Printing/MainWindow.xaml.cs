@@ -20,6 +20,7 @@ using Assimp.Configs;
 using System.Drawing.Printing;
 using System.Printing;
 using System.Diagnostics;
+using System.Net.Sockets;
 
 namespace _3D_Printing
 {
@@ -156,6 +157,8 @@ namespace _3D_Printing
                 return null;
             }
         }
+
+
 
         private Point lastMousePosition;
 
@@ -305,6 +308,33 @@ namespace _3D_Printing
 
 
 
+        private void SendTo3DPrinter(string stlFilePath)
+        {
+            try
+            {
+                // Địa chỉ IP và cổng của máy in 3D
+                string printerIPAddress = "192.168.1.100"; // Đổi thành địa chỉ IP của máy in 3D thực tế
+                int printerPort = 1234; // Đổi thành cổng của máy in 3D thực tế
+
+                // Đọc dữ liệu từ tệp STL
+                byte[] fileData = System.IO.File.ReadAllBytes(stlFilePath);
+
+                // Tạo kết nối TCP tới máy in 3D
+                using (TcpClient client = new TcpClient(printerIPAddress, printerPort))
+                using (NetworkStream stream = client.GetStream())
+                {
+                    // Gửi dữ liệu tệp STL qua kết nối TCP
+                    stream.Write(fileData, 0, fileData.Length);
+                }
+
+                MessageBox.Show("File sent to 3D printer successfully.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error sending file to 3D printer: " + ex.Message);
+            }
+        }
+
         private void btnPrint_Click(object sender, RoutedEventArgs e)
         {
             if (currentModelVisual != null && !string.IsNullOrEmpty(selectedPrinter))
@@ -315,7 +345,7 @@ namespace _3D_Printing
                     if (stlFilePath != null)
                     {
                         MessageBox.Show("Conversion completed: " + stlFilePath);
-                        // Không cần gọi phương thức PrintModel ở đây
+                        SendTo3DPrinter(stlFilePath); // Gửi tệp STL đến máy in 3D
                     }
                 }
                 catch (Exception ex)
@@ -328,6 +358,7 @@ namespace _3D_Printing
                 MessageBox.Show("Please import a 3D model before converting.");
             }
         }
+
 
 
 
