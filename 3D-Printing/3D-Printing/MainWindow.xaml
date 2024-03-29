@@ -13,8 +13,13 @@
         <TextBox x:Name="txtXCoordinate" HorizontalAlignment="Left" Margin="22,45,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtYCoordinate" HorizontalAlignment="Left" Margin="22,113,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtZCoordinate" HorizontalAlignment="Left" Margin="22,76,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnImport" Content="Import File (.obj)" HorizontalAlignment="Left" Margin="391,9,0,0" VerticalAlignment="Top" FontWeight="Bold" Click="btnImport_Click"/>
-        <ComboBox x:Name="cbPrinters" HorizontalAlignment="Left" Margin="592,9,0,0" VerticalAlignment="Top" Width="120" Height="20"/>
-        <Button x:Name="btnPrint" Content="Print" HorizontalAlignment="Left" Margin="535,9,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="20" Click="btnPrint_Click"/>
+        <Button x:Name="btnImport" Content="Import File (.obj)" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top" FontWeight="Bold" Click="btnImport_Click"/>
+        <ComboBox x:Name="cbPrinters" HorizontalAlignment="Left" Margin="670,10,0,0" VerticalAlignment="Top" Width="120" Height="20"/>
+        <Button x:Name="btnPrint" Content="Print" HorizontalAlignment="Left" Margin="462,9,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="20" Click="btnPrint_Click"/>
+        <Label Content="Current existed printer" HorizontalAlignment="Left" Margin="541,6,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtIP" HorizontalAlignment="Left" Margin="268,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Printer IP Address/Port" HorizontalAlignment="Left" Margin="133,6,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPort" HorizontalAlignment="Left" Margin="400,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57"/>
+        <Label Content=":" HorizontalAlignment="Left" Margin="388,7,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

@@ -21,6 +21,7 @@ using System.Drawing.Printing;
 using System.Printing;
 using System.Diagnostics;
 using System.Net.Sockets;
+using System.Net;
 
 namespace _3D_Printing
 {
@@ -313,8 +314,8 @@ namespace _3D_Printing
             try
             {
                 // Địa chỉ IP và cổng của máy in 3D
-                string printerIPAddress = "192.168.1.100"; // Đổi thành địa chỉ IP của máy in 3D thực tế
-                int printerPort = 1234; // Đổi thành cổng của máy in 3D thực tế
+                string printerIPAddress = txtIP.Text; // Đổi thành địa chỉ IP của máy in 3D thực tế
+                int printerPort = int.Parse(txtPort.Text); // Đổi thành cổng của máy in 3D thực tế
 
                 // Đọc dữ liệu từ tệp STL
                 byte[] fileData = System.IO.File.ReadAllBytes(stlFilePath);
@@ -337,28 +338,75 @@ namespace _3D_Printing
 
         private void btnPrint_Click(object sender, RoutedEventArgs e)
         {
-            cbPrinters_SelectionChanged(cbPrinters, null);
-            if (currentModelVisual != null && !string.IsNullOrEmpty(selectedPrinter))
+            if (currentModelVisual != null)
             {
-                try
+                if(ValidateIPAddress(txtIP.Text) && ValidatePort(txtPort.Text))
                 {
-                    string stlFilePath = ConvertToStl(filePath); // Chuyển đổi sang định dạng .stl
-                    if (stlFilePath != null)
+                    if (string.IsNullOrEmpty(txtIP.Text))
                     {
-                        MessageBox.Show("Conversion completed: " + stlFilePath);
-                        SendTo3DPrinter(stlFilePath); // Gửi tệp STL đến máy in 3D
+                        MessageBox.Show("IP Address cannot empty");
+                        return;
                     }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error converting: " + ex.Message);
+                    else if (string.IsNullOrEmpty(txtPort.Text))
+                    {
+                        MessageBox.Show("Port cannot empty");
+                        return;
+                    }
+                    try
+                    {
+                        string stlFilePath = ConvertToStl(filePath); // Chuyển đổi sang định dạng .stl
+                        if (stlFilePath != null)
+                        {
+                            MessageBox.Show("Conversion completed: " + stlFilePath);
+                            SendTo3DPrinter(stlFilePath); // Gửi tệp STL đến máy in 3D
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error converting: " + ex.Message);
+                    }
                 }
             }
             else
             {
-                MessageBox.Show("Please import a 3D model before converting.");
+                MessageBox.Show("Please import a 3D model before converting");
             }
         }
 
+        private bool ValidateIPAddress(string ipAddress)
+        {
+            if (string.IsNullOrEmpty(ipAddress))
+            {
+                MessageBox.Show("IP Address cannot be empty.");
+                return false;
+            }
+
+            IPAddress parsedIPAddress;
+            if (!IPAddress.TryParse(ipAddress, out parsedIPAddress) || parsedIPAddress.AddressFamily != System.Net.Sockets.AddressFamily.InterNetwork)
+            {
+                MessageBox.Show("Invalid IP Address format.");
+                return false;
+            }
+
+            return true;
+        }
+
+        private bool ValidatePort(string port)
+        {
+            if (string.IsNullOrEmpty(port))
+            {
+                MessageBox.Show("Port cannot be empty.");
+                return false;
+            }
+
+            int portNumber;
+            if (!int.TryParse(port, out portNumber) || portNumber < 0 || portNumber > 65535)
+            {
+                MessageBox.Show("Invalid port number. Please enter a valid port number between 0 and 65535.");
+                return false;
+            }
+
+            return true;
+        }
     }
 }
